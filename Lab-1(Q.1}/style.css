@@ -1,0 +1,103 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+
+}
+html{
+    height:100;
+}
+.wrapper{
+    min-height: 100%;
+    width:100%;
+    position: relative;
+}
+body{
+    height:100%;
+    background:#ddd;
+}
+h2{
+    padding:50px;
+    background:#113316;
+    color:f0f1f5;
+    font-family:big john;
+    text-align:center;
+    font-size:30pt;
+    letter-spacing: 1pt;
+}
+
+.navigationDesktop{
+    background:#fc575e;
+}
+
+nav{
+    height: 40px;
+    width:560px;
+    display: block;
+    margin:0 auto;
+    text-align:center;
+    text-transform: uppercase;
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    font-family: monospace;
+    font-weight: bold;
+    font: size 13pt;
+    color:#112233;
+}
+
+nav a:hover{
+    background:#243422;
+    color: #f0f1f5;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li{
+    float:left;
+    width:140px;
+    height:40px;
+    line-height:40px;
+    background:#fc575e;
+}
+
+nav ul ul li{
+    position:relative;
+    display: none;
+}
+
+nav ul li:hover ul li{
+    display:block;
+    animation: navmenu 500ms forward;
+}
+
+@keyframes navmenu{
+    0%{
+        opacity: 0;
+        top:5px;
+    }
+    100%{
+        opacity: 1;
+        top:0px;
+    }
+}
+
+nav ul ul ul{
+    display: none;
+}
+
+nav ul ul li:hover
+ul{display: block;
+    animation: navmenu 500ms forwards;
+}
+@keyframes navmenu{
+    0%{
+        opacity: 0;
+        top:5px;
+    }
+}
+
